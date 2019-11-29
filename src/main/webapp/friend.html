@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/layim/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="/css/friend.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="layui-row" style="height:100%;">
+            <div class="layui-col-sm10 layui-col-sm-offset1" style="height:100%;background: #fff;">
+                <div class="layui-col-sm3" style="height:100%;">
+                    <ul class="Grouping">
+                        <li class="li_active">
+                            <span>全部</span>
+                            <i>6</i>
+                        </li>
+                        <li>
+                            <span>好友</span>
+                            <i>3</i>
+                        </li>
+                        <li>
+                            <span>家人</span>
+                            <i>1</i>
+                        </li>
+                        <li>
+                            <span>同事</span>
+                            <i>1</i>
+                        </li>
+                        <li>
+                            <span>一头牛</span>
+                            <i>1</i>
+                        </li>
+                    </ul>
+                    <button class="addgroup layui-btn layui-btn-primary">添加分组</button>
+                </div>
+                <div class="layui-col-sm9" style="height:100%;overflow: auto;">
+                    <ul class="FriendDetails">
+                        <li>
+                            <div class="HeadPortrait">
+                                <img src="./image/account.png" alt="">
+                            </div>
+                            <div class="FriendInformation">
+                                <p class="name">马云</p>
+                                <p>备注：<i ondblclick="toReplace(this)">备注名称</i></p>
+                                <div class="SetGrouping">
+                                    <div class="layui-input-inline layui-form">
+                                        <select name="city" lay-verify="" lay-filter="test" id="select1">
+                                            <option value="好友" selected="">好友</option>
+                                            <option value="家人">家人</option>
+                                            <option value="同事">同事</option>
+                                            <option value="一头牛">一头牛</option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                        class="layui-btn layui-btn-normal layui-btn-radius layui-btn-xs">移动至</button>
+                                </div>
+                                <button class="layui-btn layui-btn-primary layui-btn-xs">删除</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HeadPortrait">
+                                <img src="./image/account.png" alt="">
+                            </div>
+                            <div class="FriendInformation">
+                                <p class="name">马云</p>
+                                <p>备注：<i ondblclick="toReplace(this)">备注名称</i></p>
+                                <div class="SetGrouping">
+                                    <div class="layui-input-inline layui-form">
+                                        <select name="city" lay-verify="" lay-filter="test" id="select2">
+                                            <option value="好友" selected="">好友</option>
+                                            <option value="家人">家人</option>
+                                            <option value="同事">同事</option>
+                                            <option value="一头牛">一头牛</option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                        class="layui-btn layui-btn-normal layui-btn-radius layui-btn-xs">移动至</button>
+                                </div>
+                                <button class="layui-btn layui-btn-primary layui-btn-xs">删除</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HeadPortrait">
+                                <img src="./image/account.png" alt="">
+                            </div>
+                            <div class="FriendInformation">
+                                <p class="name">马云</p>
+                                <p>备注：<i ondblclick="toReplace(this)">备注名称</i></p>
+                                <div class="SetGrouping">
+                                    <div class="layui-input-inline layui-form">
+                                        <select name="city" lay-verify="" lay-filter="test" id="select3">
+                                            <option value="好友" selected="">好友</option>
+                                            <option value="家人">家人</option>
+                                            <option value="同事">同事</option>
+                                            <option value="一头牛">一头牛</option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                        class="layui-btn layui-btn-normal layui-btn-radius layui-btn-xs">移动至</button>
+                                </div>
+                                <button class="layui-btn layui-btn-primary layui-btn-xs">删除</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HeadPortrait">
+                                <img src="./image/account.png" alt="">
+                            </div>
+                            <div class="FriendInformation">
+                                <p class="name">马云</p>
+                                <p>备注：<i ondblclick="toReplace(this)">备注名称</i></p>
+                                <div class="SetGrouping">
+                                    <div class="layui-input-inline layui-form">
+                                        <select name="city" lay-verify="" lay-filter="test" id="select4">
+                                            <option value="好友" selected="">好友</option>
+                                            <option value="家人">家人</option>
+                                            <option value="同事">同事</option>
+                                            <option value="一头牛">一头牛</option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                        class="layui-btn layui-btn-normal layui-btn-radius layui-btn-xs">移动至</button>
+                                </div>
+                                <button class="layui-btn layui-btn-primary layui-btn-xs">删除</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HeadPortrait">
+                                <img src="./image/account.png" alt="">
+                            </div>
+                            <div class="FriendInformation">
+                                <p class="name">马云</p>
+                                <p>备注：<i ondblclick="toReplace(this)">备注名称</i></p>
+                                <div class="SetGrouping">
+                                    <div class="layui-input-inline layui-form">
+                                        <select name="city" lay-verify="" lay-filter="test" id="select5">
+                                            <option value="好友" selected="">好友</option>
+                                            <option value="家人">家人</option>
+                                            <option value="同事">同事</option>
+                                            <option value="一头牛">一头牛</option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                        class="layui-btn layui-btn-normal layui-btn-radius layui-btn-xs">移动至</button>
+                                </div>
+                                <button class="layui-btn layui-btn-primary layui-btn-xs">删除</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HeadPortrait">
+                                <img src="./image/account.png" alt="">
+                            </div>
+                            <div class="FriendInformation">
+                                <p class="name">马云</p>
+                                <p>备注：<i ondblclick="toReplace(this)">备注名称</i></p>
+                                <div class="SetGrouping">
+                                    <div class="layui-input-inline layui-form">
+                                        <select name="city" lay-verify="" lay-filter="test" id="select6">
+                                            <option value="好友" selected="">好友</option>
+                                            <option value="家人">家人</option>
+                                            <option value="同事">同事</option>
+                                            <option value="一头牛">一头牛</option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                        class="layui-btn layui-btn-normal layui-btn-radius layui-btn-xs">移动至</button>
+                                </div>
+                                <button class="layui-btn layui-btn-primary layui-btn-xs">删除</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/layim/layui.js"></script>
+    <script>
+        document.onselectstart = function () { return false; };
+
+        layui.use(['form'], function () {
+            var form = layui.form;
+        });
+        $('.Grouping').find('li').on('click', function () {
+            $(this).addClass('li_active').siblings().removeClass('li_active')
+        })
+
+        function toReplace(divElement) {
+            var inputElement = document.createElement("input");
+            inputElement.id = 'replaceinput'
+            var txt = divElement.innerHTML
+            inputElement.value = divElement.innerHTML;
+            divElement.parentNode.replaceChild(inputElement, divElement);
+            inputElement.focus()
+            inputElement.onblur = function () {
+                divElement.innerHTML = inputElement.value;
+                inputElement.parentNode.replaceChild(divElement, inputElement);
+                if(inputElement.value == ''){
+                    divElement.innerHTML = txt
+                }
+                if(inputElement.value != ''){
+                    $(divElement).parent().siblings('.name').text(inputElement.value)
+                }
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
